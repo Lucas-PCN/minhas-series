@@ -1,0 +1,10 @@
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      waitDurationInOpenState: 5000
+      failureRateThreshold: 50
+      minimumNumberOfCalls: 2
+
+  instances:
+    addEpisode:
+      baseConfig: default
